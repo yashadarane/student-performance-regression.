@@ -1,0 +1,8 @@
+venv/
+.env
+Student_Performance.csv
+student_data.csv
+__pycache__/
+*.py[cod]
+.vscode/
+.idea/
