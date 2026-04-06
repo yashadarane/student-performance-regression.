@@ -78,7 +78,7 @@ student-performance-regression/
 
 ### Clone the repository
 
-git clone https://github.com/your-username/student-performance-regression.git  
+git clone https://github.com/yashadarane/student-performance-regression.git  
 cd student-performance-regression  
 
 ### Create virtual environment (recommended)
