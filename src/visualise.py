@@ -1,18 +1,11 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
-
-
-# Global styling (IMPORTANT)
 sns.set_theme(style="whitegrid")
 plt.rcParams["figure.figsize"] = (8, 5)
 
 
 def plot_correlation(df):
-    """
-    Clean correlation heatmap
-    """
     plt.figure(figsize=(10, 6))
-
     corr = df.corr(numeric_only=True)
 
     sns.heatmap(
@@ -32,9 +25,6 @@ def plot_correlation(df):
 
 
 def plot_predictions(y_true, y_pred):
-    """
-    Actual vs Predicted with reference line
-    """
     plt.figure()
 
     sns.scatterplot(x=y_true, y=y_pred, alpha=0.6)
@@ -55,9 +45,6 @@ def plot_predictions(y_true, y_pred):
 
 
 def plot_feature_relationships(df, target_col):
-    """
-    Feature vs Target with regression line
-    """
     features = df.drop(columns=[target_col]).columns
 
     for feature in features:
